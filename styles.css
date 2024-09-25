@@ -1,0 +1,239 @@
+/* Style umum untuk semua perangkat */
+body {
+    background-image: url('https://i.ibb.co.com/Lt7kmFQ/image.png'); /* Menggunakan URL gambar yang benar */
+    background-size: cover; /* Menyesuaikan ukuran gambar dengan latar belakang */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:rgba(51, 51, 51, 0.8);
+    color: white;
+    padding: 10px;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Agar judul berada di tengah */
+    position: relative;
+}
+
+#store-title {
+    text-align: center; /* Agar teks berada di tengah */
+    width: 100%; /* Buat judul mengisi lebar penuh */
+    margin: 0;
+    font-size: 36px; /* Ukuran teks untuk judul */
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.hamburger {
+    background-color:rgba(51, 51, 51, 0.8);
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+}
+
+.hamburger span {
+    background-color: white;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.menu {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.menu.show {
+    display: block;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Jarak antar tombol produk */
+    flex-wrap: wrap; /* Membuat produk dalam baris baru di layar kecil */
+    margin-top: 20px;
+}
+
+.product {
+    background-color:rgba(51, 51, 51, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    width: 200px; /* Tetap pada ukuran sedang untuk produk */
+    flex-grow: 1; /* Agar produk bisa tumbuh dan memenuhi ruang yang ada */
+    max-width: 300px; /* Batas lebar produk */
+    border: 2px solid white;
+    color: white;
+}
+
+.product img {
+    width: 100%; /* Gambar menyesuaikan lebar produk */
+    border-radius: 15px;
+}
+
+.product h3 {
+    font-size: 20px;
+}
+
+.product .price {
+    font-size: 18px;
+    color: #4CAF50;
+    margin: 10px 0;
+}
+
+.product button {
+    background: linear-gradient(45deg, #25D366, #128C7E);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.product button:hover {
+    background: linear-gradient(45deg, #25D366, #128C7E);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.modal.show {
+    display: block;
+    opacity: 1;
+}
+
+.modal-content {
+    border: 2px solid white;
+    color: white;
+    background-color:rgb(255, 255, 255, 0,9);
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1); /* Pastikan scale awal adalah 1 */
+    border-radius: 15px;
+    opacity: 0; /* Awal opacity diatur ke 0 */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Menambahkan transisi untuk opacity dan transform */
+}
+
+.modal.show .modal-content {
+    opacity: 1; /* Menampilkan opacity saat modal terbuka */
+}
+
+.modal-content img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.no-scroll {
+    overflow: hidden; /* Menghilangkan scroll saat modal terbuka */
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column; /* Menumpuk produk dalam satu kolom di layar kecil */
+        align-items: center;
+    }
+
+    .product {
+        width: 90%; /* Mengatur lebar produk menjadi 90% di layar kecil */
+        max-width: none; /* Menghilangkan batasan lebar produk */
+    }
+
+    .hamburger {
+        right: 10px;
+    }
+}
+#whatsapp-button {
+    background: linear-gradient(45deg, #25D366, #128C7E);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+    cursor: pointer; /* Menambahkan kursor pointer untuk efek interaksi */
+    margin-top: 10px; /* Menambahkan jarak atas */
+}
+
+#whatsapp-button:hover {
+    background: linear-gradient(45deg, #1DAE58, #0E703F); /* Efek hover untuk tombol */
+}
+footer {
+    position: fixed; /* Memastikan footer selalu berada di bawah */
+    bottom: 0; /* Menempatkan footer di bagian bawah */
+    left: 0; /* Mengatur agar footer berada di kiri */
+    width: 100%; /* Membuat footer melebar 100% */
+    background-color: rgba(51, 51, 51, 0.8); /* Warna latar belakang footer */
+    color: white; /* Warna teks */
+    text-align: center; /* Teks di tengah */
+    padding: 10px 0; /* Memberikan padding atas dan bawah */
+    font-size: 14px; /* Ukuran font */
+}
+

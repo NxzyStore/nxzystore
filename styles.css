@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color:rgba(51, 51, 51, 0.8);
+    background-color:rgba(51, 51, 51, 0.2);
     color: white;
     padding: 10px;
     position: relative;
@@ -89,9 +89,10 @@ nav {
 }
 
 .product {
-    background-color:rgba(51, 51, 51, 0.8);
+    backdrop-filter: blur(20px);
+    background-color: transparent;
     border-radius: 15px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     padding: 20px;
     text-align: center;
@@ -152,6 +153,7 @@ nav {
 }
 
 .modal-content {
+    backdrop-filter: blur(20px);
     border: 2px solid white;
     color: white;
     background-color:rgb(255, 255, 255, 0,9);
@@ -230,7 +232,7 @@ footer {
     bottom: 0; /* Menempatkan footer di bagian bawah */
     left: 0; /* Mengatur agar footer berada di kiri */
     width: 100%; /* Membuat footer melebar 100% */
-    background-color: rgba(51, 51, 51, 0.8); /* Warna latar belakang footer */
+    background-color: rgba(51, 51, 51, 0.2); /* Warna latar belakang footer */
     color: white; /* Warna teks */
     text-align: center; /* Teks di tengah */
     padding: 10px 0; /* Memberikan padding atas dan bawah */

@@ -5,6 +5,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    padding-bottom: 50px;
 }
 
 header {
@@ -109,7 +110,7 @@ nav {
 
 .product img {
     width: 100%; /* Gambar menyesuaikan lebar produk */
-    border-radius: 15px;
+    border-radius: 500px;
 }
 
 .product h3 {
@@ -233,15 +234,15 @@ nav {
 }
 
 footer {
-    position: fixed; /* Memastikan footer selalu berada di bawah */
-    bottom: 0; /* Menempatkan footer di bagian bawah */
-    left: 0; /* Mengatur agar footer berada di kiri */
-    width: 100%; /* Membuat footer melebar 100% */
-    background-color: rgba(51, 51, 51, 0.2); /* Warna latar belakang footer */
+    position: fixed; /* Agar footer tetap di bagian bawah layar */
+    bottom: 0; /* Posisi di bagian bawah */
+    left: 0; /* Dimulai dari kiri */
+    width: 100%; /* Lebar penuh */
+    background-color: rgba(51, 51, 51, 0.2); /* Warna latar belakang */
     color: white; /* Warna teks */
-    text-align: center; /* Teks di tengah */
-    padding: 10px 0; /* Memberikan padding atas dan bawah */
-    font-size: 14px; /* Ukuran font */
+    text-align: flex; /* Teks di tengah */
+    padding: 10px 0; /* Padding atas dan bawah */
+    font-size: 14px; /* Ukuran font untuk teks copyright */
 }
 
 .invite-container {
@@ -253,7 +254,8 @@ footer {
     background-color: transparent; /* Warna khas WhatsApp */
     color: white;
     border: none;
-    padding: 30px 350px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    padding: 30px 50px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;

@@ -35,26 +35,6 @@ nav {
     margin-right: 10px;
 }
 
-.hamburger {
-    position: absolute;
-    right: 20px;
-    top: 10px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 22px;
-}
-
-.hamburger span {
-    background-color: white;
-    height: 4px;
-    width: 100%;
-    border-radius: 2px;
-    transition: all 0.3s ease;
-}
-
 .menu {
     display: none;
     background-color: rgba(0, 0, 0, 0.8);
@@ -83,7 +63,7 @@ nav {
 .product-container {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Jarak antar tombol produk */
+    gap: 50px; /* Jarak antar tombol produk */
     flex-wrap: wrap; /* Membuat produk dalam baris baru di layar kecil */
     margin-top: 20px;
 }
@@ -97,7 +77,7 @@ nav {
     padding: 20px;
     text-align: center;
     cursor: pointer;
-    width: 200px; /* Tetap pada ukuran sedang untuk produk */
+    width: 100px; /* Tetap pada ukuran sedang untuk produk */
     flex-grow: 1; /* Agar produk bisa tumbuh dan memenuhi ruang yang ada */
     max-width: 300px; /* Batas lebar produk */
     border: 2px solid white;
@@ -110,7 +90,7 @@ nav {
 
 .product img {
     width: 100%; /* Gambar menyesuaikan lebar produk */
-    border-radius: 500px;
+    border-radius: 25px;
 }
 
 .product h3 {
@@ -131,6 +111,26 @@ nav {
     font-size: 16px;
     border-radius: 8px;
     transition: background 0.3s ease;
+}
+
+.hamburger {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+}
+
+.hamburger span {
+    background-color: white;
+    height: 4px;
+    width: 100%;
+    border-radius: 2px;
+    transition: all 0.3s ease;
 }
 
 .product button:hover {
@@ -160,7 +160,7 @@ nav {
     backdrop-filter: blur(20px);
     border: 2px solid white;
     color: white;
-    background-color:rgb(255, 255, 255, 0.9);
+    background-color:transparent(255, 255, 255, 0.9);
     padding: 20px;
     width: 90%;
     max-width: 400px;
@@ -254,13 +254,17 @@ footer {
     background-color: transparent; /* Warna khas WhatsApp */
     color: white;
     border: none;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, #25D366, #128C7E);
     padding: 30px 50px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
     border: 2px solid white;
     backdrop-filter: blur(5px);
+}
+
+.invite-btn:hover{
+    background: linear-gradient(45deg, #25D366, green);
 }
 
 .invite-btn:hover {

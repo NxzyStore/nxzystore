@@ -46,3 +46,11 @@ function openWhatsApp() {
     const phoneNumber = "6283846904769"; // Ganti dengan nomor WhatsApp
     window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
 }
+
+function inviteToWhatsApp() {
+    // Ganti URL ini dengan tautan invite grup WhatsApp kamu
+    const whatsappGroupLink = "https://chat.whatsapp.com/DERcJv8gPYy6nRLR41cpUS";
+    
+    // Membuka tautan WhatsApp grup
+    window.open(whatsappGroupLink, "_blank");
+}

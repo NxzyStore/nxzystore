@@ -159,7 +159,7 @@ nav {
     backdrop-filter: blur(20px);
     border: 2px solid white;
     color: white;
-    background-color:rgb(255, 255, 255, 0,9);
+    background-color:rgb(255, 255, 255, 0.9);
     padding: 20px;
     width: 90%;
     max-width: 400px;
@@ -215,6 +215,7 @@ nav {
         right: 10px;
     }
 }
+
 #whatsapp-button {
     background: linear-gradient(45deg, #25D366, #128C7E);
     color: white;
@@ -230,6 +231,7 @@ nav {
 #whatsapp-button:hover {
     background: linear-gradient(45deg, #1DAE58, #0E703F); /* Efek hover untuk tombol */
 }
+
 footer {
     position: fixed; /* Memastikan footer selalu berada di bawah */
     bottom: 0; /* Menempatkan footer di bagian bawah */

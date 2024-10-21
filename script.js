@@ -1,3 +1,4 @@
+
 function toggleMenu() {
     const menu = document.getElementById('menu');
     menu.classList.toggle('show'); // Menampilkan atau menyembunyikan menu
@@ -49,7 +50,7 @@ function openWhatsApp() {
 
 function inviteToWhatsApp() {
     // Ganti URL ini dengan tautan invite grup WhatsApp kamu
-    const whatsappGroupLink = "https://chat.whatsapp.com/DERcJv8gPYy6nRLR41cpUS";
+    const whatsappGroupLink = "https://chat.whatsapp.com/GIeY7w1GDZ0ClRGenCfCmz";
     
     // Membuka tautan WhatsApp grup
     window.open(whatsappGroupLink, "_blank");
